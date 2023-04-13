@@ -1,0 +1,52 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/login/login",
+		    "style": {
+		        "navigationBarTitleText": "",
+				"navigationStyle": "custom"
+		    }
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "记心情",
+				"navigationBarBackgroundColor": "#d0f14d",
+				"navigationBarTextStyle": "white"
+				
+			}
+		}
+	    ,{
+            "path" : "pages/eat/eat",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "开心吃",
+				"navigationBarBackgroundColor": "#f0ad4e",
+				"navigationBarTextStyle": "white"
+            }
+           
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"fontSize": "14px",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "心情"
+			
+		}, {
+			"pagePath": "pages/eat/eat",
+			"text": "吃货"
+		}]
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	}
+}
